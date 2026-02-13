@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Internship Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/VIT-AP NEW LOGO PNG FORMAT.png" alt="VIT-AP Logo" class="logo-img">
+                <span>InternHub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="internships.html">Internships</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Form -->
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Create Account</h2>
+            
+            <!-- Role Toggle -->
+            <div class="role-toggle">
+                <button type="button" class="role-btn active" data-role="student">Student</button>
+                <button type="button" class="role-btn" data-role="company">Company</button>
+            </div>
+
+            <form id="registerForm" novalidate>
+                <!-- Student Form -->
+                <div id="studentForm" class="role-form active">
+                    <div class="form-group">
+                        <label for="studentName">Full Name</label>
+                        <input type="text" id="studentName" name="studentName">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentEmail">Email</label>
+                        <input type="email" id="studentEmail" name="studentEmail">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentPassword">Password</label>
+                        <input type="password" id="studentPassword" name="studentPassword">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentConfirmPassword">Confirm Password</label>
+                        <input type="password" id="studentConfirmPassword" name="studentConfirmPassword">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="college">College</label>
+                        <input type="text" id="college" name="college">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="branch">Branch</label>
+                        <input type="text" id="branch" name="branch">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cgpa">CGPA</label>
+                        <input type="number" id="cgpa" name="cgpa" step="0.01" min="0" max="10">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Skills</label>
+                        <textarea id="skills" name="skills" rows="4"></textarea>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resume">Resume (PDF only, max 2MB)</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf">
+                        <span class="error-msg"></span>
+                    </div>
+                </div>
+
+                <!-- Company Form -->
+                <div id="companyForm" class="role-form">
+                    <div class="form-group">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" id="companyName" name="companyName">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyEmail">Email</label>
+                        <input type="email" id="companyEmail" name="companyEmail">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyPassword">Password</label>
+                        <input type="password" id="companyPassword" name="companyPassword">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyConfirmPassword">Confirm Password</label>
+                        <input type="password" id="companyConfirmPassword" name="companyConfirmPassword">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="website">Website</label>
+                        <input type="url" id="website" name="website">
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="4"></textarea>
+                        <span class="error-msg"></span>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Register</button>
+                <p class="form-footer">Already have an account? <a href="login.html">Login here</a></p>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/validation.js"></script>
+</body>
+</html>

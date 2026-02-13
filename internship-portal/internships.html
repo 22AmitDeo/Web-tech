@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships - Internship Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/VIT-AP NEW LOGO PNG FORMAT.png" alt="VIT-AP Logo" class="logo-img">
+                <span>InternHub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="internships.html" class="active">Internships</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Internships Section -->
+    <section class="internships-section">
+        <div class="container">
+            <h2>Available Internships</h2>
+
+            <!-- Filters -->
+            <div class="filters">
+                <input type="text" id="searchBar" placeholder="Search by title...">
+                <select id="locationFilter">
+                    <option value="all">All Locations</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Pune">Pune</option>
+                </select>
+            </div>
+
+            <!-- Internship Cards -->
+            <div class="internships-grid" id="internshipsGrid">
+                <div class="internship-card" data-title="Web Development Intern" data-location="Mumbai">
+                    <h3>Web Development Intern</h3>
+                    <p class="company">Tech Solutions Pvt Ltd</p>
+                    <div class="internship-details">
+                        <span>Mumbai</span>
+                        <span>₹15,000/month</span>
+                        <span>3 months</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <div class="internship-card" data-title="Data Science Intern" data-location="Bangalore">
+                    <h3>Data Science Intern</h3>
+                    <p class="company">Analytics Corp</p>
+                    <div class="internship-details">
+                        <span>Bangalore</span>
+                        <span>₹20,000/month</span>
+                        <span>6 months</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <div class="internship-card" data-title="UI/UX Design Intern" data-location="Delhi">
+                    <h3>UI/UX Design Intern</h3>
+                    <p class="company">Creative Studios</p>
+                    <div class="internship-details">
+                        <span>Delhi</span>
+                        <span>₹12,000/month</span>
+                        <span>4 months</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <div class="internship-card" data-title="Mobile App Development Intern" data-location="Hyderabad">
+                    <h3>Mobile App Development Intern</h3>
+                    <p class="company">AppWorks Technologies</p>
+                    <div class="internship-details">
+                        <span>Hyderabad</span>
+                        <span>₹18,000/month</span>
+                        <span>5 months</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <div class="internship-card" data-title="Digital Marketing Intern" data-location="Pune">
+                    <h3>Digital Marketing Intern</h3>
+                    <p class="company">Marketing Pro</p>
+                    <div class="internship-details">
+                        <span>Pune</span>
+                        <span>₹10,000/month</span>
+                        <span>3 months</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <div class="internship-card" data-title="Machine Learning Intern" data-location="Bangalore">
+                    <h3>Machine Learning Intern</h3>
+                    <p class="company">AI Innovations</p>
+                    <div class="internship-details">
+                        <span>Bangalore</span>
+                        <span>₹25,000/month</span>
+                        <span>6 months</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <img src="images/VIT-AP NEW LOGO PNG FORMAT.png" alt="VIT-AP Logo" class="footer-logo">
+        </div>
+    </footer>
+
+    <script src="js/validation.js"></script>
+</body>
+
+</html>
